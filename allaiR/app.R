@@ -9,13 +9,11 @@
 
 library(shiny)
 library(ggplot2)
-# Define UI for application that draws a histogram
 ui <- fluidPage(
    
    # Application title
    titlePanel("Rationalität unter VWL-Master-Studierenden"),
    
-   # Sidebar with a slider input for number of bins 
    sidebarLayout(
       sidebarPanel(
           numericInput("ac",
@@ -43,7 +41,6 @@ mainPanel(
        )
    )
 )
-# Define server logic required to draw a histogram
 server <- function(input, output) {
   
      observeEvent(input$go,{

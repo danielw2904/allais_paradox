@@ -44,6 +44,26 @@
   \field{year}{1953}
 \endentry
 
+\entry{gintis2009bounds}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Gintis}{G.}%
+     {Herbert}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Princeton University Press}%
+  }
+  \strng{namehash}{GH1}
+  \strng{fullhash}{GH1}
+  \field{labelyear}{2009}
+  \field{sortinit}{G}
+  \field{title}{The bounds of reason: Game theory and the unification of the
+  behavioral sciences}
+  \field{year}{2009}
+\endentry
+
 \entry{oliver2003quantitative}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -66,6 +86,86 @@
   \field{volume}{24}
   \field{journaltitle}{Journal of Economic Psychology}
   \field{year}{2003}
+\endentry
+
+\entry{osborne2004introduction}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Osborne}{O.}%
+     {Martin~J}{M.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford university press}%
+  }
+  \strng{namehash}{OMJ1}
+  \strng{fullhash}{OMJ1}
+  \field{labelyear}{2009}
+  \field{sortinit}{O}
+  \field{title}{An introduction to game theory}
+  \list{location}{1}{%
+    {New York}%
+  }
+  \field{year}{2009}
+\endentry
+
+\entry{rieck2012spieltheorie}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Rieck}{R.}%
+     {Christian}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Christian Rieck Verlag}%
+  }
+  \strng{namehash}{RC1}
+  \strng{fullhash}{RC1}
+  \field{labelyear}{2015}
+  \field{sortinit}{R}
+  \field{title}{Spieltheorie: Eine Einf{\"u}hrung}
+  \field{year}{2015}
+\endentry
+
+\entry{barbera2004handbook}{incollection}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Sugden}{S.}%
+     {Robert}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \name{editor}{3}{}{%
+    {{}%
+     {Barber{\`a}}{B.}%
+     {Salvador}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hammond}{H.}%
+     {Peter}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Seidl}{S.}%
+     {Christian}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{SR1}
+  \strng{fullhash}{SR1}
+  \field{labelyear}{2004}
+  \field{sortinit}{S}
+  \field{booktitle}{Handbook of Utility Theory: Volume 2 Extensions}
+  \field{chapter}{14}
+  \field{pages}{687\bibrangedash 755}
+  \field{title}{Alternatives to Expected Utility: Foundations}
+  \field{year}{2004}
 \endentry
 
 \lossort

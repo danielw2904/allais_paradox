@@ -96,8 +96,12 @@
 \headcommand {\slideentry {6}{0}{0}{22/22}{}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\beamer@partpages {1}{22}}
-\headcommand {\beamer@subsectionpages {19}{22}}
-\headcommand {\beamer@sectionpages {19}{22}}
-\headcommand {\beamer@documentpages {22}}
-\headcommand {\def \inserttotalframenumber {15}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{0}{0}{22/23}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {22}{23}}
+\headcommand {\beamer@partpages {1}{23}}
+\headcommand {\beamer@subsectionpages {19}{23}}
+\headcommand {\beamer@sectionpages {19}{23}}
+\headcommand {\beamer@documentpages {23}}
+\headcommand {\def \inserttotalframenumber {16}}

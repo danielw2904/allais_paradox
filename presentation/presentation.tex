@@ -4,7 +4,19 @@
   \usetheme{Boadilla}
   \usecolortheme{dolphin}
   % \setbeamertemplate{footline}
- \setbeamercovered{transparent}
+  \setbeamercovered{transparent}
+
+  \AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
 }
 
 \usepackage[german]{babel}
@@ -65,7 +77,14 @@
   
  \end{frame}
 
+ \begin{frame}
+   \frametitle{Rationalit\"at unter VWL-Studierenden}
+   \begin{center}
+     
 
+   \huge{\textbf{Warum bevorzugen Sie diese Kombination?}}
+   \end{center}
+ \end{frame}
 
 \section{Axiome der Erwartungsnutzentheorie}
 \label{sec:einfuhrung}
@@ -99,7 +118,74 @@
 
 \end{frame}
 
+\section{Allais-Paradoxon}
 
+\begin{frame}
+  \frametitle{Beispiel \textcite[S. 527]{allais_paradox}}
+    \begin{itemize}
+
+  \item \textbf{Bevorzugen Sie Situation A oder Situation B?}\\
+  \textit{Situation A:} Sie bekommen 100 Mio.\footnote{In Franken.} mit Sicherheit.\\
+  \textit{Situation B:} 10\% Chance 500 Mio. zu bekommen. 89\% Chance 100 Mio. zu bekommen. 1\% Chance nichts zu bekommen. 
+  
+\item \textbf{Bevorzugen Sie Situation C oder Situation D?}\\
+  \textit{Situation C:} 11\% Chance 100 Mio. zu bekommen. 89\% Chance nichts zu bekommen.\\
+  \textit{Situation D:} 10\% Chance 500 Mio. zu bekommen. 90\% Chance nichts zu bekommen.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Vorhersage aufgrund des Unabh\"angigkeitsaxioms}
+  \begin{itemize}
+  \item<1-> Falls der erwartete Nutzen aus A gr\"o"ser ist als jener aus B \begin{equation}\label{eq:6}
+     A \succ  B \Leftrightarrow u(100) > 0.10* u(500) + \alert<3>{0.89* u(100)} \tag{Situation A}
+   \end{equation}
+   
+ \item<2-> ... dann ist der erwartete Nutzen aus C gr\"o"ser als jener aus D \begin{equation}
+     \label{eq:7}
+   \Rightarrow \alert<3>{0.11*u(100)} > 0.10*u(500) \Leftrightarrow C \succ D \tag{Situation B}
+ \end{equation}
+ 
+\item<3-> ... denn es wird einfach $0.89*u(100)$ auf beiden Seiten abgezogen.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Allais-Paradoxon}
+  \begin{itemize}
+  \item Viele bevorzugen A \& D\\~\\
+  \item<2-> M\"ogliche Begr\"undungen:
+    \begin{itemize}
+    \item Komplette Sicherheit in A wird bevorzugt
+    \item Abneigung gegen\"uber "`Verlust"' 
+    \item Erwartete reue
+    \item Fehlensch\"atzung von Wahrscheinlichkeiten 
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\section{Allais-Paradoxon im Kontext von Gesundheit}
+
+\section{Fragen \& Diskussion}
+
+\begin{frame}
+  \frametitle{Fragen \& Diskussion}
+  \begin{itemize}
+  \item<1> Gibt es noch Fragen?\\~\\
+  \item<2-> Finden Sie, dass das Allais-Paradoxon "`Irrationalit\"at"' aufzeigt?\\~\\
+  \item<2-> Ist damit die Annahme der Rationalit\"at in der VWL zu verwerfen?\\~\\
+  \item<2-> W\"urden Sie nun beim Experiment anders antworten?\\~\\
+  \item<2-> Welchen Unterschied macht der Kontext Geld/Gesundheit?\\~\\
+    
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]
+  \frametitle{Literatur}
+  \printbibliography
+\end{frame}
 \end{document}
 %%% Local Variables:
 %%% mode: latex

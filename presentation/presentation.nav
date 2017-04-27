@@ -19,17 +19,85 @@
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {3}{3}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {2}{Axiome der Erwartungsnutzentheorie}{4}{Axiome der Erwartungsnutzentheorie}{0}}
+\headcommand {\slideentry {1}{0}{2}{4/4}{}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@sectionpages {3}{3}}
+\headcommand {\beamer@framepages {4}{4}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\slideentry {1}{0}{3}{5/5}{}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{0}{1}{4/7}{}{0}}
+\headcommand {\beamer@framepages {5}{5}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {4}{7}}
-\headcommand {\beamer@partpages {1}{7}}
-\headcommand {\beamer@subsectionpages {4}{7}}
-\headcommand {\beamer@sectionpages {4}{7}}
-\headcommand {\beamer@documentpages {7}}
-\headcommand {\def \inserttotalframenumber {4}}
+\headcommand {\sectionentry {2}{Axiome der Erwartungsnutzentheorie}{6}{Axiome der Erwartungsnutzentheorie}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@sectionpages {3}{5}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {3}{5}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {2}{0}{1}{6/6}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {6}{6}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {2}{0}{2}{7/10}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {7}{10}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {3}{Allais-Paradoxon}{11}{Allais-Paradoxon}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@sectionpages {6}{10}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {6}{10}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{0}{1}{11/11}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {11}{11}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{0}{2}{12/12}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {12}{12}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{0}{3}{13/15}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{15}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{0}{4}{16/17}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {16}{17}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {4}{Allais-Paradoxon im Kontext von Gesundheit}{18}{Allais-Paradoxon im Kontext von Gesundheit}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@sectionpages {11}{17}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {11}{17}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {4}{0}{1}{18/18}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {18}{18}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {5}{Fragen \& Diskussion}{19}{Fragen \& Diskussion}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@sectionpages {18}{18}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {18}{18}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{0}{1}{19/19}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {19}{19}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{0}{2}{20/21}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {20}{21}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {6}{Literatur}{22}{Literatur}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@sectionpages {19}{21}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {19}{21}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{0}{0}{22/22}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\beamer@partpages {1}{22}}
+\headcommand {\beamer@subsectionpages {19}{22}}
+\headcommand {\beamer@sectionpages {19}{22}}
+\headcommand {\beamer@documentpages {22}}
+\headcommand {\def \inserttotalframenumber {15}}

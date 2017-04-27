@@ -6,4 +6,10 @@
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {1}{Experiment}{3}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {2}{Axiome der Erwartungsnutzentheorie}{4}{0}{2}
+\beamer@sectionintoc {2}{Axiome der Erwartungsnutzentheorie}{6}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {3}{Allais-Paradoxon}{11}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {4}{Allais-Paradoxon im Kontext von Gesundheit}{18}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {5}{Fragen \& Diskussion}{19}{0}{5}

@@ -16,6 +16,34 @@
   {}
 \endgroup
 
+\entry{allais_paradox}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Allais}{A.}%
+     {Par~M.}{P.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {[Wiley, Econometric Society]}%
+  }
+  \strng{namehash}{APM1}
+  \strng{fullhash}{APM1}
+  \field{labelyear}{1953}
+  \field{sortinit}{A}
+  \field{issn}{00129682, 14680262}
+  \field{number}{4}
+  \field{pages}{503\bibrangedash 546}
+  \field{title}{Le Comportement de l'Homme Rationnel devant le Risque: Critique
+  des Postulats et Axiomes de l'Ecole Americaine}
+  \verb{url}
+  \verb http://www.jstor.org/stable/1907921
+  \endverb
+  \field{volume}{21}
+  \field{journaltitle}{Econometrica}
+  \field{year}{1953}
+\endentry
+
 \entry{oliver2003quantitative}{article}{}
   \name{author}{1}{}{%
     {{}%

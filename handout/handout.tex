@@ -1,0 +1,150 @@
+\documentclass[11pt]{article}
+        \usepackage[T1]{fontenc} % Font styles
+	\usepackage[utf8]{inputenc} % Special characters "ä, ö, ü, ß" made possible
+        \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry} % page setup
+        \usepackage[doublespacing]{setspace} % set line spacing
+        \usepackage{multicol} % multiple columns: \begin{multicols}{number}....\end{multicols}
+        \usepackage{csquotes} % \blockquote{} command for long quotes
+	\usepackage[ngerman]{babel} % Language (deutsch: ngerman)
+	\usepackage{amsmath} % Add formulas to document
+	\usepackage{graphicx} % Add graphics to document
+        \usepackage{cancel} % Cancel out terms in equations
+        \usepackage{xcolor} % Color output [see commands]
+        \usepackage{array} % keep equations aligned by inserting & at the alignment point
+        \usepackage{longtable} % tables longer than one page
+        \usepackage{booktabs} % fancy tables from r
+        \usepackage{dcolumn} % also r tables
+        \usepackage{rotating} % rotated tables
+        \usepackage[toc,page]{appendix} % appendix
+        \usepackage{fancyhdr} % header and footer
+            \pagestyle{fancy}
+            \rhead{Gabler, Winkler}
+            \lhead{Irrationalit\"at}
+            \renewcommand\headrulewidth{1pt}
+            \setlength{\headheight}{14pt}
+	\usepackage[style=authoryear, backend=bibtex]{biblatex} % citation that works 
+            \bibliography{bibliography} % declare bibliography file name without .bib extention
+% Declaration of commands
+            \newcommand{\lagr}{nn\mathcal{L}} % \lagr for lagrangian [I need this all the time so makes sense to declare shortcut]
+            \newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}} % cancel with colors \Ccancel[color]{...}; default: black
+
+\pagenumbering{arabic}
+\setlength{\parskip}{0pt}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+  \section*{Irrationalit"at} % there is some stuff with titlepage setup around but I find this to be more convenient as you can do whatever you want here. Add date/time, Authornames, space...
+  \textbf{\textcite{oliver2003quantitative}\\\citetitle{oliver2003quantitative}}\\
+  \large{von Stefan Gabler \& Daniel Winkler}
+  
+  {\large 3. Mai 2017\par}
+\end{center}
+
+\section{Einf"uhrung}
+\label{sec:einfuhrung}
+
+\textcite{oliver2003quantitative} testet das Allais-Paradox im Kontext von Gesundheit. Das Allais-Paradox beschreibt eine systematische Verletzung des Unabh\"angigkeitsaxioms der Erwartungsnutzentheorie. 
+
+\subsection{Die Axiome}
+\label{sec:die-axiome}
+
+\begin{itemize}
+\item \textbf{Situation:} Entscheidung unter Unsicherheit
+
+\item \textbf{Axiome der Erwartunsnutzentheorie nach Von Neumann
+    \& Morgenstern\footnote{Es existieren mehrere Formulierungen der Axiome. F"ur einen kurzen "Uberblick siehe \textcite[S. 689]{barbera2004handbook}.}:} \parencites[siehe][S. 689f.;]{barbera2004handbook}[S. 190ff.;]{rieck2012spieltheorie}[S. 24ff.]{von1955theory}
+  
+  \begin{enumerate}
+  \item Unabh"angigkeit von (irrelevanten) Alternativen.\\
+    F"ur alle $x, y, z \in$ A\footnote{Menge der Alternative} und alle $\alpha \in (0,1)$:\\
+    \begin{equation}
+      \label{eq:4}
+      x \succ y \Rightarrow \alpha x +(1-\alpha) z \succ \alpha y + (1-\alpha) z  \tag{Unabh"angigkeit}
+    \end{equation}
+
+    Dieses Axiom besagt, dass der Wert einer Alternative nicht von anderen m\"oglichen Alternativen abh\"angt. Wenn $x$ gegen\"uber $y$ bevorzugt wird, so gilt diese Relation auch noch wenn $x$ und $y$ Teile von (sonst gleichen) Lotterien sind.\\
+    Beispiel nach \textcite[S. 7]{osborne2004introduction}: Sie bestellen in Ihrem Lieblingslokal aufgrund Ihrer Pr\"aferenzstruktur immer die selbe Speise (z.B. Schnitzel). Nun entscheidet der Koch eine neue Speise in die Karte aufzunehmen (z.B. Soja-Burger). Da der Soja-Burger neu ist und er Test-esser braucht startet der Koch ein Experiment. Bei jeder Bestellung bekommt man mit 50\% Wahrscheinlichkeit das Gericht, das man bestellt hat und mit 50\% Wahrscheinlichkeit den Soja-Burger\footnote{Annahme: Niemand bestellt freiwillig den Soja-Burger}. Gilt das Axiom der Unabh\"angigkeit, so bestellen Sie noch immer das Schnitzel und kein anderes bereits vorhandenes Gericht. Die 50\% Chance den Soja-Burger zu bekommen sollte nichts am Nutzen des Schnitzels (oder der anderen Speisen) \"andern. 
+
+
+    
+  \item Die Pr"aferenzrelation "uber die Lotterien ist transitiv, vollst"andig und asymmetrisch:\\
+    F"ur alle $x, y, z \in$ A:
+      \begin{equation}
+      \label{eq:1}
+     x \succ y \succ z \Rightarrow x \succ z \tag{Transitivit"at}
+    \end{equation}
+    F\"ur alle x, y $\in$ A gilt eine und nur eine der folgenden Relationen:
+    \begin{equation}
+      \label{eq:2}
+     x \succ y \text{ oder } y \succ x \text{ oder } x \sim y \tag{Vollst"andigkeit  \& Asymmetrie}
+    \end{equation}
+  \item Stetigkeit der Pr\"aferenzen:\\
+    Es existieren ein $\alpha \in [0,1]$, sodass wenn $x \succ y \succ z$:
+    \begin{equation}
+      \label{eq:3}
+      y \sim \alpha x + (1-\alpha) z \tag{Stetigkeit}
+    \end{equation}
+  \end{enumerate}
+\end{itemize}
+
+Diese Axiome sind notwendig da es m"oglich sein soll, einen Erwartungswert zu bilden. Folgende "Aquivalenz muss daher f"ur $\alpha \in [0,1]$ gelten: 
+\begin{equation}
+  \label{eq:5}
+  x \sim (y, \alpha, z, (1-\alpha)) \Leftrightarrow u(x) = \alpha u(y) + (1-\alpha)u(z)
+\end{equation}
+wobei $u(x),u(z)$ konkrete Zahlenwerte sind \parencite[siehe ][S. 190f.]{rieck2012spieltheorie}.
+
+\subsection{Allais-Paradoxon}
+\label{sec:allais-paradoxon}
+
+\textcite{allais_paradox} kritisiert, dass in Experimenten das Unabh"angigkeitsaxiom systematisch verletzt wird. Er beschreibt dazu folgende Situation \parencite[S. 527]{allais_paradox}: 
+
+\begin{quote}
+  \begin{enumerate}
+
+  \item Bevorzugen Sie Situation A oder Situation B?\\
+  \textbf{Situation A:} Sie bekommen 100 Mio.\footnote{In Franken.} mit Sicherheit.\\
+  \textbf{Situation B:} 10\% Chance 500 Mio. zu bekommen. 89\% Chance 100 Mio. zu bekommen. 1\% Chance nichts zu bekommen. 
+  
+\item Bevorzugen Sie Situation C oder Situation D?\\
+  \textbf{Situation C:} 11\% Chance 100 Mio. zu bekommen. 89\% Chance nichts zu bekommen.\\
+  \textbf{Situation D:} 10\% Chance 500 Mio. zu bekommen. 90\% Chance nichts zu bekommen.
+\end{enumerate}
+\end{quote}
+Aufgrund des Unabh"angigkeitsaxioms m"ussten Personen, die Situation A bevorzugen, auch Situation C, denn:
+\begin{equation}\label{eq:6}
+     A \succ  B \Leftrightarrow u(100) > 0.10* u(500) + 0.89* u(100) \tag{Situation A}
+   \end{equation}
+   \begin{equation}
+     \label{eq:7}
+   \Rightarrow 0.11*u(100) > 0.10*u(500) \Leftrightarrow C \succ D \tag{Situation B}     
+   \end{equation}
+
+   Genau um diesen Rechenschritt durchf"uhren zu k"onnen wurden die Axiome formuliert. \\
+   Allais jedoch argumentiert, dass einige Personen A und D bevorzugen werden. Dieses Argument konnte auch empirisch best"atigt werden \parencites[S. 3;]{oliver2003quantitative}[S. 104]{osborne2004introduction}. Allais meinte, dass Situation A aufgrund der Sicherheit bevorzugt wird. Generalisiert lautet das Argument, dass besonders (un)erw"unschte Konsequenzen "ubersch"atzt werden. In der Entscheidungssituation f"allt also ein besonders hohes Gewicht auf sie \parencite[S. 697]{barbera2004handbook}. 
+   
+   Eine weitere Erkl"arung stammt von Kahneman und Tversky \parencite[1991, in ][S. 3]{oliver2003quantitative}. Sie argumentieren, dass Menschen eine Abneigung gegen"uber Verlust haben und daher Verlust st"arker bewerten als h"ohere Gewinne\footnote{Hier w"urde der Nullgewinn als Verlust wahrgenommen, da man 100 Mio. mit Sicherheit bekommen h"atte}. Wenn in beiden Situationen die Chance nichts zu gewinnen hoch ist, so wird dieses Ergebnis nicht so stark als Verlust wahrgenommen. Daher "uberwiegt beim zweiten Vergleich der h"ohere potentielle Gewinn bei D.
+
+   Eine dritte M"oglichkeit ist, dass Individuen erwarten, dass sie ihre Entscheidung bereuen w"urden, sollten sie in Situation B nichts bekommen, da sie in Situation A sicher gewonnen h"atten \parencite[Bell, 1982; Loomes und Sugden, 1982; 1987a;b, in ][S. 3]{oliver2003quantitative}.
+   
+   Die letzte potentielle Begr"undung in \textcite[S. 4]{oliver2003quantitative} ist, wie Individuen Wahrscheinlichkeiten einsch"atzen. Dabei werden oft kleine Wahrscheinlichkeiten (Sprung von 0\% auf 1\% Chance nichts zu gewinnen) "ubersch"atzt und gro"se Wahrscheinlichkeiten (Sprung von 89\% auf 90\% Chance nichts zu gewinnen) untersch"atzt.
+
+   Alles in allem entsteht das Paradoxon dadurch, dass Individuen eine bewusste Entscheidung treffen, und wissen, dass sie diese Entscheidung getroffen haben \parencite[S. 17]{gintis2009bounds}.
+
+   Zur Erinnerung: Um rationale Akteure zu modellieren ben\"otigt man keine weitgreifenden Annahmen (vgl. homo oeconomicus, homo rationalis). Jedoch zeigt Allais Paradoxon auf, dass Entscheidungstr\"ager auch innerhalb ihrer Pr\"aferenzen Inkonsistent zeigen k\"onnen. Solche Inkonsistenzen k\"onnen jedoch in bestehende Modelle integriert werden indem man den aktuellen Zustand von Individuen in die Nutzenfunktion einflie"sen l\"asst \parencite[siehe Kahnemans Prospect Theory in][S. 246]{gintis2009bounds}. 
+   
+   
+\section{Allais-Paradoxon im Kontext von Gesundheit}
+\label{sec:allais-paradoxon-im}
+
+HIER PAPER ZUSAMMENFASSUNG
+
+
+
+\printbibliography
+\end{document} % Nothing gets printed after here 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

@@ -1,0 +1,19 @@
+\documentclass{beamer}
+\mode<presentation> {
+
+  \usetheme{Boadilla}
+  \usecolortheme{dolphin}
+  \setbeamertemplate{footline}
+}
+
+\usepackage[german]{babel}
+\usepackage[style=authoryear, backend=bibtex]{biblatex} 
+   \bibliography{bibliography} 
+\title[  \textbf{\textcite{oliver2003quantitative}\\\citetitle{oliver2003quantitative}}\\]{Irrationalit\"at}
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

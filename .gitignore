@@ -32,7 +32,6 @@ vignettes/*.pdf
 *.utf8.md
 *.knit.md
 
-
 # LaTex
 
 *.aux
@@ -58,3 +57,5 @@ vignettes/*.pdf
 *.mtc1
 *.out
 *.synctex.gz
+*.log
+

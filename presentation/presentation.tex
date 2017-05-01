@@ -18,11 +18,13 @@
 }
 
 }
-
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage[german]{babel}
 \usepackage[style=authoryear, backend=bibtex]{biblatex} 
    \bibliography{bibliography} 
-\usepackage{eurosym}
+   \usepackage{eurosym}
+   \usepackage{booktabs}
 \title{Irrationalit\"at}
    
 \author{Stefan Gabler \& Daniel Winkler}
@@ -33,8 +35,11 @@
 
 \begin{frame}[plain]
   \titlepage
-  \textcite{oliver2003quantitative}\\\citetitle{oliver2003quantitative}\\
+  \begin{center}
+    
 
+  \textcite{oliver2003quantitative}\\\citetitle{oliver2003quantitative}\\
+  \end{center}
 \end{frame}
 
 \begin{frame}
@@ -55,7 +60,7 @@
   \begin{block}{1. Entscheidung}
    \begin{itemize}
       \item[A] Sie bekommen \euro 100  mit Sicherheit.
-      \item[B] Sie haben eine 10\% Chance auf \euro 500,\\ eine 89\% Chance auf \euro 100\\ und eine 1\% Chance nichts zu bekommen.
+      \item[B] Sie haben eine 10\% Chance auf \euro  500,\\ eine 89\% Chance auf \euro 100\\ und eine 1\% Chance nichts zu bekommen.
      \end{itemize}
 
    \end{block}
@@ -109,7 +114,7 @@
       \label{eq:2}
      x \succ y \text{ oder } y \succ x \text{ oder } x \sim y \tag{Vollst"andigkeit  \& Asymmetrie}
     \end{equation}
-  \item<3> Es existieren ein $\alpha \in [0,1]$, sodass wenn $x \succ y \succ z$:
+  \item<3> Es existiert ein $\alpha \in [0,1]$, sodass wenn $x \succ y \succ z$:
     \begin{equation}
       \label{eq:3}
       y \sim \alpha x + (1-\alpha) z \tag{Stetigkeit}
@@ -159,13 +164,89 @@
     \begin{itemize}
     \item Komplette Sicherheit in A wird bevorzugt
     \item Abneigung gegen\"uber "`Verlust"' 
-    \item Erwartete reue
-    \item Fehlensch\"atzung von Wahrscheinlichkeiten 
+    \item Erwartete Reue
+    \item Fehleinsch\"atzung von Wahrscheinlichkeiten 
     \end{itemize}
   \end{itemize}
 \end{frame}
 
 \section{Allais-Paradoxon im Kontext von Gesundheit}
+
+\begin{frame}
+  \frametitle{Fragestellung }
+  \begin{itemize}
+  \item<1> Untersuchung an Arbeitnehmern eines Krankenhauses\\~\\
+  \item<2->
+    \begin{quote}
+       Imagine that you have an illness from which, without treatment, you will die almost immediately. Your doctor tells you that there are two alternative available treatments for your illness. 
+     \end{quote}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{1. Darstellung}
+  \begin{figure}[!h]
+        \includegraphics[width=0.75\textwidth]{../handout/pic_final.png}
+  \caption{Darstellung der Behandlungsm\"oglichkeiten 1. Runde}\label{fig:graph}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{2. Darstellung}
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.75\textwidth]{../handout/pic2.png}
+    \caption{Darstellung der Behandlungsm\"oglichkeiten 2. Runde}
+  \label{fig:graph2}
+\end{figure} 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Quantitative Ergebnis}
+  \begin{table}[!h]
+  \centering
+  \begin{tabular}{c c}
+    \toprule
+   \textbf{Präferenzverhalten}  & \textbf{Anzahl der Teilnehmer}\\ \midrule
+    (a) (a) & 14 (36,8\%) \\ \midrule 
+    (b) (b) & 4 (10,5\%) \\ \midrule
+    (a) (b) & 3 (7,9\%) \\ \midrule
+    (b) (a) & 14 (36,8\%) \\ \midrule
+    (a) (I*) & 2 (5,3\%) \\ \midrule
+    (I) (a) & 1 (2,6\%) \\ \bottomrule
+    \tiny{*I steht f\"ur Indifferent}& \\\hline
+  \end{tabular}
+  \caption{Ergebnis}
+  \label{tab:erg}
+\end{table}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Qualitative Ergebnisse}
+  \framesubtitle{Antwort: (a) (a)}
+  \begin{itemize}
+  \item<1> Die Wahrscheinlichkeit zu sterben von 1\%, im Verhältnis zu den 10\% 18 Jahre zu leben, ist wert riskiert zu werden.\\~\\
+  \item<2> Die Wahrscheinlichkeit zu sterben von 1\%, im Verhältnis zu den 10\% 18 Jahre zu leben, ist wert riskiert zu werden, und beim zweitem Paar ist der Unterschied von 1\% zu überleben vernachlässigbar.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Qualitative Ergebnisse}
+  \framesubtitle{Antwort: (b) (a)}
+  \begin{itemize}
+  \item<1> 1. Zus\"atzliche Wahrscheinlichkeit zu sterben von 1\% nicht das Risiko wert.
+    
+    2. Unterschied zwischen 10\% und 11\% zu überleben vernachlässigbar.
+
+  \item<2> 1. Sicheres Überleben
+
+    2. Erhöhte Wahrscheinlichkeit zu sterben von 1\% ist das Risiko wert.
+
+  \item<3> 1. Sicheres \"Uberleben
+
+    2. Unterschied von 10\% und 11\% zu überleben vernachlässigbar. 
+  \end{itemize}
+\end{frame}
 
 \section{Fragen \& Diskussion}
 
@@ -175,7 +256,7 @@
   \item<1> Gibt es noch Fragen?\\~\\
   \item<2-> Finden Sie, dass das Allais-Paradoxon "`Irrationalit\"at"' aufzeigt?\\~\\
   \item<2-> Ist damit die Annahme der Rationalit\"at in der VWL zu verwerfen?\\
-    F\"ur interessierte siehe Diskussion in \textcite[Kapitel 12]{gintis2009bounds}.\\~\\
+    F\"ur Interessierte siehe Diskussion in \textcite[Kapitel 12]{gintis2009bounds}.\\~\\
   \item<2-> W\"urden Sie nun beim Experiment anders antworten?\\~\\
   \item<2-> Welchen Unterschied macht der Kontext Geld/Gesundheit?\\~\\
     

@@ -15,6 +15,7 @@
         \usepackage{booktabs} % fancy tables from r
         \usepackage{dcolumn} % also r tables
         \usepackage{rotating} % rotated tables
+        \usepackage{enumerate}% http://ctan.org/pkg/enumerate
         \usepackage[toc,page]{appendix} % appendix
         \usepackage{fancyhdr} % header and footer
             \pagestyle{fancy}
@@ -32,7 +33,7 @@
 \setlength{\parskip}{0pt}
 
 \begin{document}
-\thispagestyle{empty}
+\thispagestyle{plain}
 \begin{center}
   \section*{Irrationalit"at} % there is some stuff with titlepage setup around but I find this to be more convenient as you can do whatever you want here. Add date/time, Authornames, space...
   \textbf{\textcite{oliver2003quantitative}\\\citetitle{oliver2003quantitative}}\\
@@ -56,7 +57,7 @@
     \& Morgenstern\footnote{Es existieren mehrere Formulierungen der Axiome. F"ur einen kurzen "Uberblick siehe \textcite[S. 689]{barbera2004handbook}.}:} \parencites[siehe][S. 689f.;]{barbera2004handbook}[S. 190ff.;]{rieck2012spieltheorie}[S. 24ff.]{von1955theory}
   
   \begin{enumerate}
-  \item Unabh"angigkeit von (irrelevanten) Alternativen.\\
+  \item Unabh"angigkeit von (irrelevanten) Alternativen:\\
     F"ur alle $x, y, z \in$ A\footnote{Menge der Alternative} und alle $\alpha \in (0,1)$:\\
     \begin{equation}
       \label{eq:4}
@@ -64,7 +65,7 @@
     \end{equation}
 
     Dieses Axiom besagt, dass der Wert einer Alternative nicht von anderen m\"oglichen Alternativen abh\"angt. Wenn $x$ gegen\"uber $y$ bevorzugt wird, so gilt diese Relation auch noch wenn $x$ und $y$ Teile von (sonst gleichen) Lotterien sind.\\
-    Beispiel nach \textcite[S. 7]{osborne2004introduction}: Sie bestellen in Ihrem Lieblingslokal aufgrund Ihrer Pr\"aferenzstruktur immer die selbe Speise (z.B. Schnitzel). Nun entscheidet der Koch eine neue Speise in die Karte aufzunehmen (z.B. Soja-Burger). Da der Soja-Burger neu ist und er Test-esser braucht startet der Koch ein Experiment. Bei jeder Bestellung bekommt man mit 50\% Wahrscheinlichkeit das Gericht, das man bestellt hat und mit 50\% Wahrscheinlichkeit den Soja-Burger\footnote{Annahme: Niemand bestellt freiwillig den Soja-Burger}. Gilt das Axiom der Unabh\"angigkeit, so bestellen Sie noch immer das Schnitzel und kein anderes bereits vorhandenes Gericht. Die 50\% Chance den Soja-Burger zu bekommen sollte nichts am Nutzen des Schnitzels (oder der anderen Speisen) \"andern. 
+    Beispiel nach \textcite[S. 7]{osborne2004introduction}: Sie bestellen in Ihrem Lieblingslokal aufgrund Ihrer Pr\"aferenzstruktur immer dieselbe Speise (z.B. Schnitzel). Nun entscheidet der Koch eine neue Speise in die Karte aufzunehmen (z.B. Soja-Burger). Da der Soja-Burger neu ist und der Koch Test-esser sucht, startet dieser ein Experiment. Bei jeder Bestellung bekommt man mit 50\% Wahrscheinlichkeit das Gericht, das man bestellt hat und mit 50\% Wahrscheinlichkeit den Soja-Burger\footnote{Annahme: Niemand bestellt freiwillig den Soja-Burger}. Gilt das Axiom der Unabh\"angigkeit, so bestellen Sie noch immer das Schnitzel und kein anderes bereits vorhandenes Gericht. Die 50\%-Chance, den Soja-Burger zu bekommen, sollte nichts am Nutzen des Schnitzels (oder der anderen Speisen) \"andern. 
 
 
     
@@ -88,17 +89,17 @@
   \end{enumerate}
 \end{itemize}
 
-Diese Axiome sind notwendig da es m"oglich sein soll, einen Erwartungswert zu bilden. Folgende "Aquivalenz muss daher f"ur $\alpha \in [0,1]$ gelten: 
+Diese Axiome sind notwendig, da es m"oglich sein soll, einen Erwartungswert vom Nutzen zu bilden. Folgende "Aquivalenz muss daher f"ur $\alpha \in [0,1]$ gelten: 
 \begin{equation}
   \label{eq:5}
-  x \sim (y, \alpha, z, (1-\alpha)) \Leftrightarrow u(x) = \alpha u(y) + (1-\alpha)u(z)
+  x \sim (y, \alpha, z, (1-\alpha)) \Leftrightarrow u(x) = \alpha u(y) + (1-\alpha)u(z) 
 \end{equation}
 wobei $u(x),u(z)$ konkrete Zahlenwerte sind \parencite[siehe ][S. 190f.]{rieck2012spieltheorie}.
 
 \subsection{Allais-Paradoxon}
 \label{sec:allais-paradoxon}
 
-\textcite{allais_paradox} kritisiert, dass in Experimenten das Unabh"angigkeitsaxiom systematisch verletzt wird. Er beschreibt dazu folgende Situation \parencite[S. 527]{allais_paradox}: 
+\textcite{allais_paradox} kritisiert, dass in Experimenten das Unabh"angigkeitsaxiom systematisch verletzt wird. Er beschreibt dazu folgende Situationen \parencite[S. 527]{allais_paradox}: 
 
 \begin{quote}
   \begin{enumerate}
@@ -133,18 +134,86 @@ Aufgrund des Unabh"angigkeitsaxioms m"ussten Personen, die Situation A bevorzuge
    Die letzte potentielle Begr"undung in \textcite[S. 4]{oliver2003quantitative} h\"angt damit zusammen, wie Individuen Wahrscheinlichkeiten einsch"atzen. Dabei werden oft kleine Wahrscheinlichkeiten (Sprung von 0\% auf 1\% Chance nichts zu gewinnen) "ubersch"atzt und gro"se Wahrscheinlichkeiten (Sprung von 89\% auf 90\% Chance nichts zu gewinnen) untersch"atzt.
 
   
-   Zur Erinnerung: Um rationale Akteure zu modellieren ben\"otigt man keine weitgreifenden Annahmen (vgl. homo oeconomicus, homo rationalis). Jedoch zeigt Allais Paradoxon auf, dass Entscheidungstr\"ager auch innerhalb ihrer Pr\"aferenzen Inkonsistenzen zeigen k\"onnen. Solche Inkonsistenzen k\"onnen jedoch in bestehende Modelle integriert werden indem man den aktuellen Zustand von Individuen in die Nutzenfunktion einflie"sen l\"asst \parencite[siehe Kahnemans Prospect Theory in][S. 246]{gintis2009bounds}. 
+   Zur Erinnerung: Um rationale Akteure zu modellieren ben\"otigt man keine weitgreifenden Annahmen (vgl. homo oeconomicus, homo rationalis). Jedoch zeigt das Allais-Paradoxon auf, dass Entscheidungstr\"ager auch innerhalb ihrer Pr\"aferenzen Inkonsistenzen zeigen k\"onnen. Solche Inkonsistenzen k\"onnen jedoch in bestehende Modelle integriert werden, indem man den aktuellen Zustand von Individuen in die Nutzenfunktion einflie"sen l\"asst \parencite[siehe Kahnemans Prospect Theory in][S. 246]{gintis2009bounds}. 
    
    
 \section{Allais-Paradoxon im Kontext von Gesundheit}
 \label{sec:allais-paradoxon-im}
 
-HIER PAPER ZUSAMMENFASSUNG
+\textcite{oliver2003quantitative} hat eine Untersuchung an Arbeitnehmern eines Krankenhauses durchgeführt um den Risikofaktor bei gesundheitlichen Behandlungen wider zu spiegeln. Insgesamt haben 38 Personen aller Organisationsebenen teilgenommen. Den Personen wurde folgende Situation vorgestellt:
+\begin{quote}
+  Sie haben eine Krankheit, durch welche Sie ohne Behandlung in kürzester Zeit sterben werden. Es gibt jedoch zwei alternative Behandlungsmöglichkeiten, a und b, die angewandt werden können. Weiters gibt es eine alternative Behandlung, die Ihnen 30 weitere Lebensjahre ermöglichen würde. Diese dritte Möglichkeit ist jedoch erst in Entwicklung und Sie können diese noch nicht aussuchen\footnote{Original: Imagine that you have an illness from which, without treatment, you will die almost immediately. Your doctor tells you that there are two alternative available treatments for your illness. The two pies drawn below represent the chances of certain outcomes from the two treatments, treatment (a) and treatment (b). (ii) Your doctor tells you that a new treatment is being developed for your illness. This new treatment would give you thirty years of full health followed by death, but will not be available for you. Please rate treatment (a) and treatment (b) on the scale below.}. 
+\end{quote}
 
+Die zwei Behandlungsmöglichkeiten wurden den Teilnehmern mittels Abbildung \ref{fig:graph} dargestellt.
+\begin{figure}[!h]
+  \centering
+\includegraphics[width=0.75\textwidth]{pic_final.png}
+  \caption{Darstellung der Behandlungsm\"oglichkeiten 1. Runde}\label{fig:graph}
+\end{figure}
+
+Anschlie"send wurden Sie jedoch nicht gefragt, für welche der beiden Möglichkeiten Sie sich entscheiden, sondern sollten die beiden Behandlungen auf einer Skala von 0 bis 30 bewerten. Die dritte, nicht anwendbare Behandlungsmethode, und das Ausbleiben einer Behandlung stellten die Referenzwerte für die Bewertungsskala. Ein Teilnehmer ist zwischen den beiden Behandlungsmethoden indifferent, wenn beiden dieselbe Bewertung zugeteilt wurde. Alle Teilnehmer wurden darauf hingewiesen, dass es sich hierbei um eine kardinale Skala handelt.
+
+Die dritte Methode wurde eingefügt, um die Aufmerksamkeit der Teilnehmer von der sehr kleinen Differenz zwischen den beiden auswählbaren Möglichkeiten abzulenken.
+In einem zweiten Schritt wurde den Teilnehmern ein zweites Paar an Behandlungsmöglichkeiten (siehe Abbildung \ref{fig:graph2}) zur Auswahl gegeben. Diese beide M\"oglichkeiten  waren ebenfalls auf einer Skala von 0 bis 30 zu bewerten. Die beiden Paare unterscheiden sich nur in der Wahrscheinlichkeit sofort zu sterben. Um die Bedingungen von Allais zu erfüllen, wurde die 89\%-Möglichkeit 12 Jahre zu überleben, gegen eine 89\% Wahrscheinlichkeit sofort zu sterben, getauscht.
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.75\textwidth]{pic2.png}
+    \caption{Darstellung der Behandlungsm\"oglichkeiten 2. Runde}
+  \label{fig:graph2}
+\end{figure}
+
+Um die Rationalitätsbedingung zu erfüllen, müssten Teilnehmer, die beim ersten Paar a (bzw. b) auswählen, auch bei dem zweiten Paar wiederum a (bzw. b) wählen.
+
+Das Ergebnis ist in Tabelle \ref{tab:erg} zusammengefasst. 
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c c}
+    \toprule
+   \textbf{Präferenzverhalten}  & \textbf{Anzahl der Teilnehmer}\\ \midrule
+    (a) (a) & 14 (36,8\%) \\ \midrule 
+    (b) (b) & 4 (10,5\%) \\ \midrule
+    (a) (b) & 3 (7,9\%) \\ \midrule
+    (b) (a) & 14 (36,8\%) \\ \midrule
+    (a) (I*) & 2 (5,3\%) \\ \midrule
+    (I) (a) & 1 (2,6\%) \\ \bottomrule
+    \tiny{*I steht f\"ur Indifferent}& \\\hline
+  \end{tabular}
+  \caption{Ergebnis}
+  \label{tab:erg}
+\end{table}
+In der Spalte mit den Präferenzen ist dargestellt, wie sich die Teilnehmer verhalten haben. So bedeutet (a)(a), dass sowohl beim ersten, wie auch beim zweiten Paar die Alternative a gewählt wurde, und sich somit die Teilnehmer rational verhalten haben. (a)(b) bedeutet, dass nicht die äquivalente Methode bei beiden Paaren gewählt wurde. (I) schlie"slich hei"st, dass Indifferenz zwischen den beiden Möglichkeiten festgestellt wurde.
+
+Insgesamt kann somit festgestellt werden, dass sich 52.6\% der Teilnehmer (20) nicht rational verhalten haben. Dies stellt einen relativ hohen Anteil dar, wenn Vergleiche mit anderen Studien gezogen werden, die eine Bandbreite von 30\% bis 60\% ergaben \parencites[siehe][]{borch1968allais}{raiffa1961risk}{savage1972foundations}.
+
+Die Teilnehmer, die sich rational verhalten haben, haben folgende zwei Hauptargumente für ihr Verhalten geliefert (für den Fall (a)(a)):
+
+\begin{enumerate}[i.]
+\item Die Wahrscheinlichkeit zu sterben von 1\%, im Verhältnis zu den 10\% 18 Jahre zu leben, ist wert riskiert zu werden.
+\item Die Wahrscheinlichkeit zu sterben von 1\%, im Verhältnis zu den 10\% 18 Jahre zu leben, ist wert riskiert zu werden, und beim zweitem Paar ist der Unterschied von 1\% zu überleben vernachlässigbar.
+\end{enumerate}
+\noindent  
+Bei den nicht rationalen Teilnehmern konnten drei Gründe eruiert werden (für den Fall (b)(a)):
+
+\begin{enumerate}[i.]
+  \setcounter{enumi}{2}
+\item Beim ersten Paar ist die Wahrscheinlichkeit zu sterben von 1\%, im Verhältnis zu den 10\% 18 Jahre zu leben, nicht wert riskiert zu werden. Beim zweiten Paar ist der Unterschied zwischen 10\% und 11\% zu überleben vernachlässigbar und somit kann die 18-jährige Überlebensmöglichkeit gewählt werden.
+\item Die Alternative b im ersten Paar wurde deshalb gewählt, da die sichere Überlebenswahrscheinlichkeit einen alles bestimmenden Faktor darstellt. Im zweiten Paar ist die erhöhte Wahrscheinlichkeit zu sterben von 1\%, im Verhältnis zu den 10\% 18 Jahre zu leben, wert riskiert zu werden.
+\item Die Alternative b im ersten Paar wurde deshalb gewählt, da die sichere Überlebenswahrscheinlichkeit einen alles bestimmenden Faktor darstellt. Beim zweiten Paar ist der Unterschied von 10\% und 11\% zu überleben vernachlässigbar und somit kann die 18-jährige Überlebensmöglichkeit gewählt werden.
+\end{enumerate}
+
+Es lässt sich somit erkennen, dass die angegebenen Beweggründe der Teilnehmer kohärent mit den oben beschriebenen Begründungen übereinstimmen.
+
+Im Falle von iii. zeigt sich, dass der Verlust höher bewertet wird als ein möglicher Gewinn. Hier Verhalten sich die Probanden so wie Kahneman und Tversky \parencite[siehe][S. 4]{oliver2003quantitative} die Situation beurteilt haben. Die Gründe iv. und v. folgen der Argumentation von Allais, dass Personen dem Risiko ausweichen wollen und sich daher eher für die sichere Möglichkeit b im ersten Paar entscheiden.
+
+Für das zweite Paar sieht man schlie"slich einhellig, dass die marginale Erhöhung des Risikos weitaus weniger stark bewertet wird. Da die Möglichkeit zu sterben bereits so hoch ist, geht man eher das Risiko ein und wählt die Methode, bei der am Ende eine höhere Rendite möglich ist.
 
 
 \printbibliography
-\end{document} % Nothing gets printed after here 
+\end{document}
+% Nothing gets printed after here 
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: t
